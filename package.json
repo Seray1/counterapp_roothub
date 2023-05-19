@@ -1,0 +1,14 @@
+{
+  "name": "counterapp_roothub",
+  "version": "1.0.0",
+  "description": "![this is a counter app with javascript](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write '**/*.html'",
+    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css && echo 'Built successfully!'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

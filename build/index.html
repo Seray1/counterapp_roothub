@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/roothub.png" >
+  
+  <title>Counter App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-VeryDarkBlueMainBG flex flex-col items-center justify-center h-screen ">
+
+ <main class="bg-VeryDarkBlueCardBG w-4/5 p-5 rounded-xl flex flex-col gap-4 shadow-xl  md:w-10/12  lg:w-3/12 text-xs ">
+  
+  
+  <h1 class="text-White hover:text-Cyan text-center text-xl">Numbers of students at RootHub</h1>
+
+  <h4 class=" text-center text-5xl text-white" id="display">0</h4>
+
+  <div class="flex justify-center gap-2">
+    
+        <button class="bg-Cyan text-white px-4 py-2 rounded-sm" id="increment-btn" onclick="increase()">Count</button>
+        <button class="bg-Cyan text-white p-2 rounded-sm" onclick="decrease()" id="decrement-btn">Decount</button>
+  </div>
+  <div class="flex justify-center gap-2">
+    <button class="bg-softBlue text-white px-5 py-2 rounded-sm"  onclick="reset()" >reset</button>
+    <button class="bg-softBlue text-white px-5 py-2 rounded-sm" id="save-btn" onclick="save()">Save</button>
+  </div>
+
+  <p id="save-el" class="text-center self-center text-white w-40 ">Previous entries: </p>
+
+<button class="bg-red-600 w-fit self-center p-2 text-white rounded-sm" onclick="clearPrev()">Clear previous entries</button>
+
+ 
+  
+ 
+ </main>
+
+  <div class="fixed bottom-0 w-full text-center text-white text-xs md:text-xl lg:text-xl">
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500">Frontend Mentor</a>.  -->
+    Coded by <a href="#" class="text-blue-500">Seteyemfon Obot</a>.
+  </div>
+</body>
+
+
+</html>
